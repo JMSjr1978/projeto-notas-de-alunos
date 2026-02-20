@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim do Programador - Strategy Tech Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>STRATEGY TECH ACADEMY</h1>
+        <h2>Boletim do Programador</h2>
+        
+        <form id="formBoletim">
+            <div class="form-group">
+                <label for="professor">Professor:</label>
+                <input type="text" id="professor" name="professor" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="aluno">Aluno Programador:</label>
+                <input type="text" id="aluno" name="aluno" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Notas:</label>
+                <div class="notas-grid">
+                    <div>
+                        <label for="nota1">1º Bimestre:</label>
+                        <input type="number" id="nota1" name="nota1" step="0.01" min="0" max="10" required>
+                    </div>
+                    <div>
+                        <label for="nota2">2º Bimestre:</label>
+                        <input type="number" id="nota2" name="nota2" step="0.01" min="0" max="10" required>
+                    </div>
+                    <div>
+                        <label for="nota3">3º Bimestre:</label>
+                        <input type="number" id="nota3" name="nota3" step="0.01" min="0" max="10" required>
+                    </div>
+                    <div>
+                        <label for="nota4">4º Bimestre:</label>
+                        <input type="number" id="nota4" name="nota4" step="0.01" min="0" max="10" required>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Turno:</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="turno" value="manha" checked>
+                        Manhã
+                    </label>
+                    <label>
+                        <input type="radio" name="turno" value="tarde">
+                        Tarde
+                    </label>
+                    <label>
+                        <input type="radio" name="turno" value="noite">
+                        Noite
+                    </label>
+                </div>
+            </div>
+            
+            <button type="submit">Gerar Boletim</button>
+        </form>
+        
+        <div id="resultado" class="resultado hidden"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
