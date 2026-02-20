@@ -96,7 +96,7 @@ function gerarBoletim(p_prof, p_aluno, p_1BIM, p_2BIM, p_3BIM, p_4BIM, turno) {
         boletim += 'Continue estudando e dedicando-se! Com esforço e\n';
         boletim += 'persistência, você certamente alcançará seus objetivos.\n';
         boletim += '\n';
-        boletim += 'Não desanime! O sucesso vem para aqueles que não desistem!\n';
+        boletim += 'Não desanime! A persistência é o caminho, o resultado é a vitória!\n';
         boletim += '\n';
         boletim += 'Estamos aqui para apoiá-lo(a) em sua jornada!\n';
     }
